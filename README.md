@@ -1,1 +1,1 @@
-# big-data-masters-program
+# Big Data Architect Masters Program
