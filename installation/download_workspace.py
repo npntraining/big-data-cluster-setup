@@ -11,6 +11,7 @@ def main(arg):
     id = arg[1]
     gdown.download(id=id, output=BASE_PATH, quiet=False)
     os.system("unzip {}{} -d{}".format(BASE_PATH, ARTIFACT_NAME, BASE_PATH))
+    os.system("unzip {}{}".format(BASE_PATH, ARTIFACT_NAME))
     os.system('rm {}{}'.format(BASE_PATH, ARTIFACT_NAME))
 
 
