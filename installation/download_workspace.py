@@ -10,7 +10,7 @@ def main(arg):
     print("Downloading Big Data Masters Program Template")
     id = arg[1]
     base_path = BASE_PATH.format(arg[2])
-    gdown.download(id=id, output=BASE_PATH, quiet=False)
+    gdown.download(id=id, output=base_path, quiet=False)
     os.system("unzip {}{} -d{}".format(base_path, ARTIFACT_NAME, base_path))
     os.system("unzip {}{}".format(base_path, ARTIFACT_NAME))
     os.system('rm {}{}'.format(base_path, ARTIFACT_NAME))
